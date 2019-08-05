@@ -1,0 +1,418 @@
+// EMAIL
+
+.email {
+  height: 100%;
+  color: $color__text--accented;
+  section .section__wrapper {
+    max-width: 1200px;
+  }
+}
+
+.email__hero {
+  position: relative;
+  max-height: 100%;
+}
+
+.email__hero-info {
+  position: absolute;
+  width: 100%;
+  max-width: 1200px;
+  height: calc(100% - 56px);
+  margin: 0 auto;
+}
+
+.email__hero-photo {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.email__hero-offer {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 56px;
+  height: 56px;
+}
+
+.email__name {
+  position: absolute;
+  bottom: 0;
+  padding: 8px 16px;
+  margin: 0 !important;
+  background-color: rgba(215, 236, 244, .72);
+}
+
+.email__section-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  img {
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+  }
+  div {
+    flex: 1;
+    margin: 0;
+  }
+}
+
+.email__info {}
+
+.email__info-img {
+  display: none;
+}
+
+.email__info-major {
+  margin-right: 16px;
+}
+
+.email__attached,
+.email__offer,
+.email__video,
+.email__video-block {
+  padding: 8px;
+}
+
+.email__attached-files {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.email__attached-file {
+  position: relative;
+  width: 50%;
+  padding-bottom: 88px;
+  text-align: center;
+  a {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    &:hover {
+      opacity: .72;
+    }
+    img {
+      width: 72px;
+      height: 72px;
+    }
+  }
+}
+
+.email__offer {
+  .email__section-title {
+    div {
+      font-weight: 600;
+      color: $color__text--white;
+    }
+  }
+}
+
+.email__video {
+  .email__section-title {
+    div {
+      color: $color__text--white;
+    }
+  }
+}
+
+.email__video-img {
+  display: none;
+}
+
+.email-footer {
+  color: #F6C254;
+  background-color: #0B6C75;
+}
+
+.email-footer__wrapper {
+  max-width: 1200px;
+  height: 100%;
+  overflow: hidden;
+  padding: 8px;
+  margin: 0 auto;
+}
+
+.email-footer__logo {
+  width: 40px;
+  height: 40px;
+  margin: 8px;
+}
+
+.email-footer__widgets {
+  height: 100%;
+  overflow: hidden;
+}
+
+.email-footer__appstore,
+.email-footer__googleplay {
+  height: 40px;
+  float: left;
+  margin: 8px;
+}
+
+.email-footer__links {
+  height: 100%;
+  overflow: hidden;
+}
+
+.email-footer__link {
+  width: 50%;
+  float: left;
+  a {
+    @extend %pointer;
+    width: fit-content;
+    padding: 8px;
+    text-transform: uppercase;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.email-footer__copyright {
+  @extend .body--2;
+  padding: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .email section .section__wrapper {
+    display: flex;
+    align-items: stretch;
+    .section__block {
+      flex: 1;
+    }
+  }
+  .email__section-title img {
+    width: 72px;
+    height: 72px;
+  }
+  .email__hero-info {
+    height: calc(100% - 72px);
+  }
+  .email__name {
+    padding: 24px;
+  }
+  .email__hero-offer {
+    top: 54px;
+    right: 24px;
+    width: 72px;
+    height: 72px;
+  }
+  .email__info {
+    display: flex;
+    align-items: center;
+  }
+  .email__info-img {
+    display: block;
+    flex: 1;
+  }
+  .email__info-major.list {
+    flex: 1;
+    .item--img .item__img {
+      width: 72px;
+      height: 72px;
+    }
+  }
+  .email__attached-files {
+    display: flex;
+  }
+  .email__attached-file {
+    flex: 1;
+    width: auto;
+    margin: 16px;
+  }
+  .email__video-img {
+    display: block;
+  }
+  .email-footer__logo {
+    float: left;
+  }
+  .email-footer__link {
+    width: 25%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .email-footer__widgets {
+    float: left;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .email__hero-info {
+    left: 50%;
+    transform: translateX(-50%);
+    height: calc(100% - 88px);
+    padding: 24px;
+  }
+  .email__name {
+    padding: 32px;
+    font-size: 32px !important;
+  }
+}
+
+.email-send {
+  max-width: 800px;
+  padding: 8px;
+  margin: 0 auto;
+}
+
+.email-send__title {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.email-send__img {
+  display: none;
+}
+
+.email-send__text-secondary {
+  @extend .hl--6;
+  color: $color__text--white !important;
+}
+
+.email-send__action-send,
+.email-send__action-cancel {
+  margin: 24px 0;
+}
+
+@media screen and (min-width: 480px) {
+  .email-send__action {
+    display: flex;
+  }
+  .email-send__action-send,
+  .email-send__action-cancel {
+    flex: 1;
+  }
+  .email-send__action-send {
+    order: 2;
+    text-align: right;
+    .button--img {
+      margin-left: auto;
+      img {
+        order: 2;
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .email-send__title {
+    display: flex;
+    align-items: stretch;
+  }
+  .email-send__img {
+    display: block;
+    width: 33.33%;
+    height: 100%;
+    max-height: 400px;
+    margin-right: 24px;
+  }
+  .email-send__text {
+    flex: 1;
+  }
+  .email-send__text-secondary {
+    position: absolute;
+    bottom: 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .email-send {
+    max-width: none;
+  }
+}
+
+.email-review {
+  max-width: 800px;
+  overflow: hidden;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin: 0 auto;
+  box-shadow: $sh__bar;
+  background-color: #fff;
+  .email {
+    margin: 8px;
+    section {
+      padding-top: 0;
+      .email__hero-info {
+        height: 100%;
+      }
+    }
+  }
+}
+
+.email-review__bar {
+  height: 24px;
+  padding: 7px;
+  border-bottom: 1px solid #ccc;
+  background-color: #eee;
+  .circle {
+    float: left;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 4px;
+    background-color: #ccc;
+  }
+}
+
+.email-review__title {
+  display: flex;
+  align-items: center;
+  margin: 16px 8px;
+}
+
+.email-review__title-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 8px;
+  background-color: #eee;
+}
+
+.email-review__title-primary,
+.email-review__title-secondary {
+  height: 8px;
+  margin: 8px 0;
+}
+
+.email-review__title-primary {
+  width: 104px;
+  background-color: #ccc;
+}
+
+.email-review__title-secondary {
+  width: 200px;
+  background-color: #eee;
+}
+
+@media screen and (min-width: 768px) {
+  .email-review {
+    .email {
+      margin: 16px;
+    }
+  }
+  .email-review__bar {
+    height: 48px;
+    padding: 15px;
+    .circle {
+      width: 16px;
+      height: 16px;
+      margin-right: 8px;
+    }
+  }
+  .email-review__title {
+    margin: 24px 16px;
+  }
+  .email-review__title-avatar {
+    width: 56px;
+    height: 56px;
+    margin-right: 16px;
+  }
+  .email-review__title-primary,
+  .email-review__title-secondary {
+    height: 12px;
+    margin: 16px 0;
+  }
+}

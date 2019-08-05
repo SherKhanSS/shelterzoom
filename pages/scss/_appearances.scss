@@ -1,0 +1,94 @@
+// APPEARANCES PAGE
+
+.appearances--1 {
+  min-height: 10px;
+  padding-top: 40px !important;
+}
+
+.appearances--2 .button--extend {
+  color: #fff;
+  text-transform: none;
+  padding: 0 24px;
+}
+
+.appearances-title {
+  display: block;
+  text-align: center;
+  font-weight: 600;
+}
+
+.block-item--appearance {
+  border-radius: 10px;
+  background: #fff;
+  border: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  max-width: 52%;
+  min-width: 320px;
+  margin: 8px auto;
+}
+
+.appearances-img {
+  border-radius: 7px;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+
+.appearances-img img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.appearances-title-item {
+  padding: 10px 0;
+  display: block;
+  color: #0B6C75;
+  font-size: 16px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.appearances-title-item span {
+  display: block;
+}
+
+@media screen and (min-width: 992px) {
+  .appearances--1 {
+    min-height: 250px;
+  }
+  .appearances-title {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .appearances--1 {
+    min-height: 280px;
+  }
+  .appearances-title-item {
+    font-size: 19px;
+  }
+  .block-item--appearance {
+    width: 30%;
+    margin: 0 1% 15px 1%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .appearances-title-item {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .appearances--1 {
+    min-height: 300px;
+  }
+  .appearances-title-item {
+    font-size: 22px;
+  }
+}

@@ -1,0 +1,145 @@
+.presskit-page{
+  display: flex
+}
+.founders{
+  padding: 50px 15px
+}
+.founders-list{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.founders-title{
+  margin-top: 20px;
+}
+.founder-card{
+  min-width: 270px;
+  background: #fff;
+  padding: 30px 30px 70px;
+  border: 1px solid #0B6C75;
+  color: #0B6C75;
+  text-align: center;
+  border-radius: 6px;
+  margin: 0 15px 20px;
+
+  &__name{
+    font-size: 20px;
+  }
+  &__position{
+    font-size: 12px;
+    width: 100px;
+    margin: 0 auto;
+    padding-bottom: 15px;
+  }
+  &__photo {
+    display: inline-block;
+    max-width: 205px;
+    height: auto;
+  }
+}
+.assets-block{
+  padding: 60px 15px;
+  display: flex;
+  justify-content: center;
+}
+.need-basics{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  font-size: 25px;
+  color: #5E7FB1;
+  max-width: 470px;
+  min-width: 200px;
+  padding: 50px 30px;
+}
+.assets-item{
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  color: #0B6C75;
+  padding-bottom: 30px;
+  .set_button{
+    margin-bottom: 0;
+  }
+}
+
+.assets-item__logo{
+  width: 270px;
+  margin-right: 50px;
+  img{
+    min-width: 100%;
+  }
+}
+.assets-item__info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  .assets-item__title{
+    font-weight: 700;
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+  .assets-item__descr{
+    font-size: 16px;
+  }
+}
+.presskit-full-title{
+  padding-top: 30px;
+}
+.press-contact__descr{
+  display: flex;
+  font-weight:700;
+  align-self: flex-start;
+}
+@media (max-width:1260px){
+  .presskit-page .press-contact__item{
+    width: auto;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .presskit-page .press-page--2{
+    flex-direction: column;
+    align-items: center;
+  }
+  .assets-block{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width:991px) {
+  .presskit-page{
+    flex-direction: column;
+    .side-nav{
+      padding-bottom: 30px;
+    }
+    .need-basics{
+      margin-right: 0;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .assets-block{
+    padding: 0 15px;
+  }
+  .founders{
+    padding: 20px 15px!important;
+  }
+  .presskit-page .press-page--2{
+    padding: 20px 15px;
+  }
+  .assets-item__logo{
+    min-width: 200px;
+    margin-bottom: 10px;
+  }
+
+}
+@media (max-width: 540px) {
+   .assets-item{
+     flex-direction: column;
+   }
+   .assets-item__logo{
+     margin-right: 0;
+   }
+}

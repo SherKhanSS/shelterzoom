@@ -1,0 +1,148 @@
+// CARD
+
+.set_card {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+.set_card--badge {
+  @extend .set_card;
+  .card {
+    margin-top: 112px;
+  }
+}
+
+.card {
+  position: relative;
+  max-width: 288px;
+  min-width: 264px;
+  border: $border__card;
+  border-radius: 4px;
+  margin: 8px;
+  background-color: $color__bg__card;
+}
+.card--center {
+  @extend .card;
+  text-align: center;
+}
+
+.card__badge {
+  position: absolute;
+  top: -88px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 88px;
+  height: 88px;
+}
+
+.card__primary-action {
+  @extend %pointer;
+  @extend %hover__bg--dark;
+  form {
+    padding: 0 16px;
+    .form__button {
+      min-width: 48px;
+    }
+  }
+}
+
+.card__header {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  border-bottom: $border__card;
+}
+.card__header--img {
+  text-align: left;
+  .card__title {
+    max-width: calc(100% - 56px);
+  }
+  @extend .card__header;
+}
+
+.card__img {
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(158, 216, 160, 1);
+  border-radius: 50%;
+  margin-right: 16px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.card__title {
+  position: relative;
+  width: 100%;
+  height: 48px;
+  .st--2 {
+    position: absolute;
+    top: 24px;
+    transform: translateY(-50%);
+    width: 100%;
+  }
+}
+
+.card__media {
+  position: relative;
+  overflow: hidden;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  background-color: rgba(0,0,0,.04);
+}
+.card__media img {
+  width: 100%;
+}
+.card__media-title {
+  @extend .hl--6;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 16px;
+}
+
+.card__description {
+  padding: 16px;
+  border-bottom: $border__card;
+  .caption {
+    height: 24px;
+    color: $color__text--hover;
+  }
+}
+
+.card__list {
+  @extend .body--1;
+  padding: 16px;
+  border-bottom: $border__card;
+  color: #86A50E;
+}
+
+.card__secondary-action {
+  display: flex;
+  padding: 8px 8px 16px;
+  .set_button:last-child,
+  .set_icon {
+    margin-left: auto;
+  }
+  .link {
+    margin-top: 8px;
+  }
+}
+.card__secondary-action--button {
+  @extend .card__secondary-action;
+  display: block;
+  .set_button {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    flex: 1;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .set_card {
+    margin: 0 -8px;
+  }
+}

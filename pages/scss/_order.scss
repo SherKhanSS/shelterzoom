@@ -1,0 +1,138 @@
+// order
+
+.order {}
+
+.order__action {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  padding: 8px;
+  color: $color__text--accented;
+  background: $color__bg__card;
+  box-shadow: $sh__bar;
+}
+
+.order__action-text,
+.order__title-text {
+  @extend .st--1;
+  margin: 0 auto 0 8px;
+}
+
+.order__wrapper {
+  display: none;
+  position: fixed;
+  top: 56px;
+  z-index: 1;
+  width: 100%;
+  height: calc(100% - 56px);
+  overflow: auto;
+  background: $color__bg__card;
+}
+.order__wrapper.active-mobile {
+  display: block;
+}
+
+.order__title {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-bottom: 1px solid rgba(11, 108, 117, .16);
+  color: $color__text--accented;
+}
+
+.order__img {
+  width: 40px;
+  height: 40px;
+  margin-right: 16px;
+}
+
+.order__name {
+  @extend .st--1;
+  color: #324353 !important;
+}
+
+.order__total,
+.order__subtotal {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  border-top: 1px solid rgba(11, 108, 117, .16);
+  color: $color__text--accented;
+}
+
+.order__total {
+  bottom: 0;
+  .order__text {
+    font-weight: 600 !important;
+  }
+}
+
+.order__subtotal {
+  bottom: 56px;
+}
+
+.order__line {
+  display: flex;
+  align-items: center;
+  margin: 16px;
+}
+
+.order__text {
+  @extend .st--1;
+  text-transform: uppercase;
+}
+
+.order__price {
+  @extend .body--1;
+  margin-left: auto;
+  color: $color__text--accented;
+}
+
+.order_open,
+.order_close {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .order__action {
+    position: absolute;
+    top: 72px;
+    bottom: auto;
+    width: fit-content;
+    border-bottom-left-radius: 28px;
+  }
+  .order__wrapper {
+    display: block;
+    top: 72px;
+    right: 0;
+    width: 240px;
+    height: calc(100% - 72px);
+    &.close {
+      display: none;
+    }
+  }
+  .order_open,
+  .order_close {
+    display: block;
+  }
+  .order_open-mobile,
+  .order_close-mobile,
+  .order__action-text {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .order__action {
+    top: 88px;
+  }
+  .order__wrapper {
+    top: 88px;
+    width: 360px;
+    height: calc(100% - 88px);
+  }
+}

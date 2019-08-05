@@ -1,0 +1,188 @@
+// BACKGROUNDS
+
+.bg {
+  background: no-repeat center bottom;
+  background-size: contain;
+}
+
+.bg--blue {
+  background-color: $color__bg__section--blue;
+}
+.bg--lightblue {
+  background-color: $color__bg__section--lightblue;
+}
+.bg--green {
+  background-color: $color__bg__section--green;
+}
+.bg--white {
+  background-color: #fff;
+}
+.bg--lightyellow {
+  background-color: $color__bg__section--lightyellow;
+}
+.bg--yellow {
+  background-color: $color__bg__section--yellow;
+}
+
+.bg--account {
+  @extend .bg;
+  background-image: url("../img/bg__account.svg");
+}
+.bg--attachment {
+  @extend .bg;
+  background-image: url("../img/bg__attachment.svg");
+}
+.bg--cabin {
+  @extend .bg;
+  background-image: url("../img/bg__cabin.svg");
+  background-position-y: 180%;
+}
+.bg--checkout {
+  @extend .bg;
+  background-image: url("../img/bg__checkout.svg");
+}
+.bg--form-fields {
+  @extend .bg;
+  background-image: url("../img/bg__form-fields.svg");
+}
+.bg--email-offer {
+  @extend .bg;
+  background-image: url("../img/bg__email--offer.svg");
+}
+.bg--email-send {
+  @extend .bg;
+  background-image: url("../img/bg__email-send.svg");
+}
+.bg--homepage-1 {
+  @extend .bg;
+  background-image: url("../img/bg__homepage--1.svg");
+  background-size: 105%;
+}
+.bg--homepage-2 {
+  @extend .bg;
+  background-image: url("../img/bg__homepage--2.svg");
+  background-size: 105%;
+}
+.bg--homepage-form {
+  @extend .bg;
+  background-image: url("../img/bg__homepage--form.svg");
+  background-size: 104%;
+}
+.bg--productpage-1 {
+  @extend .bg;
+}
+.bg--productpage-mithra {
+  @extend .bg;
+}
+.bg--productpage-offer {
+  @extend .bg;
+}
+.bg--productpage-form-1 {
+  @extend .bg;
+  background-image: url("../img/bg__product--signup-2.svg");
+  background-size: 110%;
+}
+.bg--productpage-form-2 {
+  @extend .bg;
+  background-image: url("../img/bg__product--signup-1.svg");
+  background-size: 102%;
+}
+.bg--pricing-page {
+  @extend .bg;
+}
+.bg--appearances {
+  @extend .bg;
+}
+
+.bg--presspage-1 {
+  @extend .bg;
+  background-image: url("../img/Hero_image.svg");
+  background-position: center;
+  height: 270px;
+  background-size: cover;
+}
+
+.bg--presspage-2 {
+   @extend .bg;
+   background-image: url("../img/Press_kit_banner.svg");
+   background-position: center;
+   min-height: 270px;
+   background-size: cover;
+ }
+.bg--presskit-1{
+  @extend  .bg;
+  background-image: url("../img/hand_With_book.svg");
+  background-position: bottom;
+  background-size: 160%;
+}
+
+
+@media screen and (min-width: 992px) {
+  .bg--productpage-1 {
+    background-image: url("../img/bg__product.svg");
+    background-size: 1280px;
+  }
+  .bg--pricing-page {
+    background-image: url("../img/bg__pricing-page.svg");
+    background-size: 1300px;
+    background-position-y: calc(100% + 110px);
+  }
+  .bg--appearances {
+    background-image: url("../img/bg__appearances-page.svg");
+    background-size: 920px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .bg--productpage-1 {
+    background-size: 1440px;
+  }
+  .bg--pricing-page {
+    background-size: 1620px;
+    background-position-y: calc(100% + 136px);
+  }
+  .bg--appearances {
+    background-size: 1100px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .bg--productpage-mithra {
+    background-image: url("../img/bg__product--mithra.svg");
+    background-size: 1400px;
+  }
+  .bg--productpage-offer {
+    background-image: url("../img/bg__product--offer.svg");
+    background-size: 1300px;
+    background-position: 60% 60px;
+  }
+  .bg--productpage-1 {
+    background-size: 1600px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .bg--productpage-1 {
+    background-size: 1920px;
+  }
+  .bg--productpage-mithra {
+    background-size: 1800px;
+  }
+  .bg--pricing-page {
+    background-size: 1920px;
+    background-position-y: calc(100% + 160px);
+  }
+  .bg--appearances {
+    background-size: 1300px;
+  }
+}
+
+@media screen and (min-width: 1921px) {
+  .bg--cabin {
+    background-position-y: -70%;
+    background-size: cover;
+  }
+  .bg--productpage-1 {
+    background-size: 2560px;
+  }
+}

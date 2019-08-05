@@ -1,0 +1,311 @@
+.investor-relations b {
+  display: inline;
+}
+
+.investor-feedback-wrapper {
+  background-color: $color__bg__section--lightyellow;
+}
+
+.investor-feedback  {
+  overflow: visible;
+  padding: 0 10px 10px 10px;
+}
+
+.investor-feedback input {
+  margin-top: 10px;
+}
+
+.investor-feedback textarea {
+  margin: 10px 0;
+}
+
+.investor-relations {
+  color: $color__text--accented;
+  padding: 0 10px 20px 10px;
+}
+
+.investor-relations__topic {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.investor-relations__topic__bottom {
+  margin-bottom: 10px;
+}
+
+.investor-relations__text {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.investor-relations__text--16 {
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.investor-relations__h4 {
+  font-size: 22px;
+  line-height: 34px;
+}
+
+.top_graphic {
+  display: none;
+}
+
+.feedback__topic {
+  margin-bottom: 10px;
+}
+
+.form-description {
+  color: $color__text--accented;
+  font-size: 22px;
+  line-height: 34px;
+}
+
+.feedback__topic {
+  color:  $color__text--accented;
+}
+
+.form__button-investor {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 14px;
+  color: rgba(246, 194, 84, 1);
+  background-color: rgba(11, 108, 117, 1);
+  padding: 14px 46px 13px 46px;
+  border-radius: 3px;
+}
+
+.form__note {
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(11, 108, 117, 1);
+  margin-top: 10px;
+}
+
+.comment__input {
+  font-family: inherit;
+  font-size: 12px;
+  color: rgba(34, 34, 34, 0.3);
+  height: 100px;
+}
+
+.offer_now_house,
+.money_hand {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+
+
+  .investor-relations__topic__bottom {
+    font-size: 32px;
+    line-height: 44px;
+
+    padding-bottom: 30px;
+    border-bottom: 1px solid $color__text--accented;
+  }
+
+  .investor-relations {
+    max-width: 977px;
+    padding-top: 150px;
+    padding-left: 80px;
+  }
+
+  .investor-relations__h4 {
+    margin-bottom: 10px;
+  }
+
+  .investor-relations__text--16 {
+    margin-bottom: 20px;
+  }
+
+  .investor-relations__text {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  .investor-relations__number1::before {
+    content: "1";
+
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background-color: rgba(11, 108, 117, 0.3);
+    border-radius: 50%;
+    text-align: center;
+
+    left: 60px;
+  }
+
+  .investor-relations__number2::before {
+    content: "2";
+
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background-color: rgba(11, 108, 117, 0.3);
+    border-radius: 50%;
+    text-align: center;
+
+    left: 60px;
+  }
+
+  .investor-relations__number3::before {
+    content: "3";
+
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background-color: rgba(11, 108, 117, 0.3);
+    border-radius: 50%;
+    text-align: center;
+
+    left: 60px;
+  }
+
+  .investor__img {
+    position: relative;
+    flex-direction: row;
+  }
+
+  .offer_now_house {
+    display: block;
+    position: absolute;
+    bottom: 50px;
+    left: -10px;
+    width: 33%;
+    height: auto;
+  }
+
+
+
+  .input-fields {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form-description {
+    margin-bottom: 20px;
+  }
+
+  .button__wrapper {
+
+  }
+
+  .feedback__topic {
+    font-size: 58px;
+    line-height: 72px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+
+  .fullname__input,
+  .user-contacts__input {
+    margin-bottom: 20px;
+  }
+
+  .form__fullname,
+  .form__user-contacts {
+    margin-right: 20px;
+  }
+
+  .form__fullname,
+  .form__user-contacts {
+    width: 30%;
+  }
+
+  .form__comment {
+    width: 60%;
+  }
+
+  .input-fields input {
+    font-size: 12px;
+  }
+
+  .button__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .investor-relations__topic {
+    text-transform: uppercase;
+    font-size: 36px;
+    letter-spacing: -3px;
+    margin-bottom: 50px;
+  }
+
+  .investor-relations__list {
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .investor-feedback {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 100px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .footer-wrapper {
+    width: 40%;
+  }
+
+  .feedback__form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0;
+    padding: 0;
+    margin-left: 100px;
+  }
+
+  .investor-relations__list {
+    padding-left: 150px;
+  }
+
+  .investor-relations__number1::before {
+    left: 160px;
+  }
+
+  .investor-relations__number2::before {
+    left: 160px;
+  }
+
+  .investor-relations__number3::before {
+    left: 160px;
+  }
+}
+
+@media screen and (min-width: 1550px) {
+  .investor-relations__topic {
+    font-size: 52px;
+    margin-bottom: 200px;
+  }
+
+  .money_hand {
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    width: 15%;
+    height: auto;
+  }
+
+  .top_graphic {
+    display: block;
+    position: absolute;
+    top: 160px;
+    right: 0;
+    width: 75%;
+    height: auto;
+  }
+}

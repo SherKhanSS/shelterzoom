@@ -1,0 +1,12 @@
+// ICONS
+
+.set_icon {
+  .icon {
+    @extend %hover__bg--dark;
+    @extend %pointer;
+  }
+}
+.icon {
+  padding: 8px;
+  border-radius: 50%;
+}

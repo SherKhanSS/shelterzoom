@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Checkout</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" media="screen,projection" href="../css/styles.css">
+</head>
+<body>
+<header>
+    <div class="header__wrapper">
+        <div class="header__logo">
+            <img src="../img/logo__sz--color.png">
+        </div>
+        <div class="header__action">
+            <div class="set_icon">
+                <i class="icon material-icons nav_open">menu</i>
+            </div>
+        </div>
+        <div class="header__navigation">
+            <div class="header__title">
+                <div class="header__text">Navigation</div>
+                <div class="set_icon">
+                    <i class="icon material-icons nav_close">close</i>
+                </div>
+            </div>
+            <div class="header__links">
+                <div class="header__link">
+                    <i class="material-icons icon">account_circle</i>
+                    <span>Account</span>
+                </div>
+                <div class="header__link">
+                    <i class="material-icons icon">edit</i>
+                    <span>Sign Up</span>
+                </div>
+            </div>
+            <nav class="header__links">
+                <div class="header__link">
+                    <span>Products</span>
+                </div>
+                <div class="header__link">
+                    <span>Experience</span>
+                </div>
+                <div class="header__link">
+                    <span>Pricing</span>
+                </div>
+                <div class="header__link">
+                    <span>Press</span>
+                </div>
+                <div class="header__link">
+                    <span>Resources</span>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+<div class="order">
+    <div class="order__action">
+        <div class="order__action-text">Order summary</div>
+        <div class="set_icon">
+            <i class="icon material-icons order_open-mobile">expand_less</i>
+            <i class="icon material-icons order_open">chevron_left</i>
+        </div>
+    </div>
+    <div class="order__wrapper">
+        <div class="order__title">
+            <div class="order__title-text">Order summary</div>
+            <div class="set_icon">
+                <i class="icon material-icons order_close-mobile">close</i>
+                <i class="icon material-icons order_close">chevron_right</i>
+            </div>
+        </div>
+        <div class="order__content">
+            <div class="order__line">
+                <img class="order__img" src="../img/logo__sz-offer.png" alt=""/>
+                <div class="order__name">Offer Now Partner</div>
+                <div class="order__price">$1919.00</div>
+            </div>
+        </div>
+        <div class="order__subtotal">
+            <div class="order__line">
+                <div class="order__text">Subtotal</div>
+                <div class="order__price">$1919.00</div>
+            </div>
+            <div class="order__line">
+                <div class="order__text">Tax</div>
+                <div class="order__price">$1.00</div>
+            </div>
+        </div>
+        <div class="order__total">
+            <div class="order__line">
+                <div class="order__text">Total</div>
+                <div class="order__price">$1920.00</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content content--order">
+    <section class="section--fullpage bg--blue bg--checkout">
+        <div class="section__wrapper">
+            <div class="section__block">
+                <div class="block-text">
+                    <div class="hl--4">Like everything else your payment details are safe with us.</div>
+                </div>
+            </div>
+        </div>
+        <div class="section__wrapper">
+            <div class="section__block">
+                <form class="form-checkout">
+                    <div class="form__line">
+                        <div class="form__block">
+                            <div class="form__row">
+                                <input type="text" placeholder="Name"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__line">
+                        <div class="form__block">
+                            <div class="form__row">
+                                <input type="text" placeholder="Email"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__line">
+                        <div class="form__block">
+                            <div class="form__row">
+                                <input type="text" placeholder="Address"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__line">
+                        <div class="form__block">
+                            <div class="form__row">
+                                <input type="text" placeholder="City"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__line">
+                        <div class="form__block">
+                            <div class="form__row">
+                                <input type="text" placeholder="State"/>
+                            </div>
+                        </div>
+                        <div class="form__block">
+                            <div class="form__row">
+                                <input type="text" placeholder="ZIP">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__line">
+                        <div class="form__block">
+                            <div class="form__row">
+                                <select>
+                                    <option>Country</option>
+                                    <option>Item 2</option>
+                                    <option>Item 3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__line">
+                        <div class="form__block">
+                            <div class="form__row">
+                                <input type="text" placeholder="Card number"/>
+                            </div>
+                        </div>
+                        <div class="form__block">
+                            <div class="form__row">
+                                <input type="text" placeholder="MM/YY">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="set_button">
+                        <div class="button--secondary button--full">Pay $<span>2400.88</span></div>
+                    </div>
+                    <div class="cards">
+                        <img src="../img/logo__visa.svg" alt=""/>
+                        <img src="../img/logo__mastercard.png" alt=""/>
+                        <img src="../img/logo__maestro.png" alt=""/>
+                    </div>
+                </form>
+            </div>
+            <div class="section__block">
+                <div class="block-text--center">
+                    <div class="hl--5">Your subscription level</div>
+                </div>
+                <div class="set_card">
+                    <div class="card--center">
+                        <div class="card__primary-action">
+                            <div class="card__media">
+                                <img src="../img/ill__checkout--sz-partner.svg">
+                                <div class="card__media-title">ShelterZoom Partner</div>
+                            </div>
+                            <div class="card__header">
+                                <div class="card__title">
+                                    <div class="st--2">ShelterZoom Partner / <span class="accented">$199</span></div>
+                                </div>
+                            </div>
+                            <div class="card__description">
+                                <div class="body--2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel imperdiet massa, vitae pulvinar massa. Morbi varius turpis quis risus.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section__block">
+                <form>
+                    <div class="hl--5">Annual Plan</div>
+                    <div class="st--1">20% saving over monthly plan</div>
+                    <div class="form__line">
+                        <div class="form__block">
+                            <div class="form__controls">
+                                <input type="radio" name="plan" checked/>
+                                <div class="form__controls-label">$159 (Annual Cost $1,919.00)</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hl--5">Monthly Plan</div>
+                    <div class="form__line">
+                        <div class="form__block">
+                            <div class="form__controls">
+                                <input type="radio" name="plan"/>
+                                <div class="form__controls-label">$199</div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="../js/styles.js"></script>
+</body>
+</html>

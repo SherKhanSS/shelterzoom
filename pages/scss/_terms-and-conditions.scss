@@ -1,0 +1,140 @@
+// SIDE-NAV
+
+.side-nav {
+  overflow: visible;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 20px;
+}
+
+.side-nav__list {
+  width: 261px;
+}
+
+.side-nav__item {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+
+  padding-top: 11px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid $color__side-nav__bottom;
+
+  cursor: pointer;
+}
+
+.side-nav__item:last-child {
+  border-bottom: none;
+}
+
+.side-nav__item--active {
+  font-weight: 900;
+  color: $color__text--hover;
+}
+
+.legal-list {
+  padding-left: 15px;
+  padding-top: 5px;
+  display: none;
+}
+
+.legal-list--open {
+  display: block;
+}
+
+.legal-item {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  color: $color__text--black;
+
+  margin-bottom: 12px;
+}
+
+.legal-item--active {
+  color: $color__text--hover;
+}
+
+@media screen and (min-width: 992px) {
+  .side-nav {
+    overflow: visible;
+    padding-left: 56px;
+    padding-right: 19px;
+    margin-top: 60px;
+  }
+}
+
+// TERMS AND COND
+
+.terms-and-cond {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.terms-and-cond__wrapper {
+  background-color: $color__bg__section--lightblue;
+}
+
+.terms-and-cond__article {
+  overflow: visible;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  margin-top: 10px;
+  background-color: $color__bg__card;
+}
+
+.article__topic {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+  color: $color__text--accented;
+  margin-bottom: 10px;
+}
+
+.article__text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 20px;
+  color: $color__text--accented;
+}
+
+@media screen and (min-width: 992px) {
+  .terms-and-cond {
+    max-width: 1600px;
+    flex-direction: row;
+  }
+
+  .terms-and-cond__article {
+    padding-left: 79px;
+    padding-right: 78px;
+    padding-top: 35px;
+    padding-bottom: 80px;
+    margin-top: 105px;
+    margin-right: 20px;
+  }
+
+  .article__topic {
+    margin-bottom: 25px;
+    font-size: 42px;
+    line-height: 46px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .terms-and-cond__article {
+    margin-right: 230px;
+  }
+
+  .article__topic {
+    font-size: 54px;
+    font-weight: 400;
+    line-height: 72px;
+    margin-bottom: 25px;
+  }
+}

@@ -1,0 +1,287 @@
+// FORM
+
+form {
+  max-width: 800px;
+  margin: 8px auto;
+  p {
+    margin: 8px;
+  }
+  .set_button {
+    margin: 8px;
+  }
+}
+
+input, textarea {
+  width: 100%;
+  height: 40px;
+  padding: 7px;
+  border: $border__card;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #2E4354;
+  &::placeholder {
+    color: rgba(166, 173, 180, 1);
+  }
+  &[readonly] {
+    cursor: default;
+  }
+  &[type="checkbox"],
+  &[type="radio"]{
+    width: 16px;
+    height: 16px;
+    margin: 2px;
+  }
+}
+
+textarea {
+  height: 112px;
+}
+
+select {
+  width: 100%;
+  height: 40px;
+  padding: 0 23px 0 7px;
+  border: $border__card;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 24px;
+  background: url("../img/icon__arrow_drop_down.svg") right no-repeat #fff;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+select::-ms-expand {
+  display: none;
+}
+@media screen and (min-width: 0\0) {
+  select {
+    background: none \9;
+    padding: 5px \9;
+  }
+}
+
+label {
+  @extend .body--2;
+  line-height: 24px !important;
+}
+
+.form__line {
+}
+.form__line--img {
+  @extend .form__line;
+  position: relative;
+  padding-left: 48px;
+  .form__block {
+    padding-top: 24px;
+    margin: 0 8px;
+    label {
+      position: absolute;
+      top: 0;
+    }
+  }
+}
+
+.form__img {
+  position: absolute;
+  top: 24px;
+  left: 8px;
+  width: 40px;
+}
+
+.form__block {
+  position: relative;
+  margin: 8px;
+}
+
+.form__row {
+  display: flex;
+}
+.form__row--right {
+  justify-content: flex-end;
+}
+.form__row--phone {
+  @extend .form__row;
+  .country,
+  .code {
+    width: 60px;
+    margin-right: 8px;
+  }
+}
+
+.form__controls {
+  display: flex;
+  input {
+    margin-right: 8px;
+  }
+}
+.form__controls-label {
+  @extend .body--1;
+  color: $color__text--accented;
+}
+
+.form__button {
+  max-width: 88px;
+  min-width: 88px;
+  margin: 0 0 0 4px;
+}
+
+.form__group {
+  background: #fafbfc;
+  padding: 10px 15px;
+  border-bottom: 1px solid #eff0f0;
+}
+.form__group_title {
+  background: #fff;
+  color: #ed863b;
+  font-size: 18px;
+  line-height: 1.1;
+  padding: 20px 15px;
+  border-bottom: 1px solid #eff0f0;
+}
+
+.form__msg {
+  display: flex;
+  align-items: center;
+  max-width: 368px;
+}
+.form__msg-icon {
+  padding: 4px 0;
+}
+.form__msg-text {
+  @extend .body--1;
+  margin-left: 8px;
+}
+.form__msg-icon--action {
+  @extend %pointer;
+  @extend %hover__text;
+  @extend .form__msg-icon;
+  margin-left: auto;
+}
+.form__msg--attach {
+  @extend .form__msg;
+  color: $color__text--accented;
+}
+.form__msg--error {
+  @extend .form__msg;
+  color: $color__text--error;
+}
+.form__msg--help {
+  @extend .form__msg;
+  .form__msg-text {
+    @extend .caption;
+  }
+}
+.form__msg--success {
+  @extend .form__msg;
+  color: $color__text--accented;
+}
+
+.cabin__form {
+  max-width: 100%;
+  form {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+  }
+  input[type=text],
+  input[type=email],
+  input[type=phone] {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #a09e9e;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  input[type=checkbox] {
+    width: 18px;
+    height: 16px;
+    margin-top: 4px;
+  }
+  .form__block {
+    margin: 0;
+  }
+  .form__wrap {
+    max-height: none;
+    overflow-y: auto;
+    margin-bottom: 10px;
+  }
+}
+
+.cabin__form_title {
+  color: $color__text--white;
+  background: #2c3943;
+  padding: 15px 0;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.cabin__form_label {
+  color: #b2b2b2;
+  font-size: 14px;
+  margin: 5px 0 0 0;
+}
+
+.label--checkbox {
+  color: $color__text--accented;
+  font-size: 12px;
+  margin: 5px 0;
+  line-height: 1.3 !important;
+  width: 150px;
+}
+
+@media screen and (min-width: 600px) {
+  .form__line {
+    display: flex;
+  }
+  .form__line--img {
+    padding-left: 0;
+    margin-bottom: 8px;
+    .form__msg {
+      max-width: 324px;
+    }
+  }
+  .form__img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 72px;
+    height: 72px;
+    margin: 8px 8px 0 8px;
+  }
+  .form__block {
+    flex: 1;
+    margin: 8px;
+  }
+  .form__button {
+    margin: 0 0 0 8px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .cabin__form {
+    max-width: 360px;
+    .form__wrap {
+      max-height: 37vh;
+    }
+  }
+  form {
+    padding: 8px 0;
+    margin: 0 -8px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .cabin__form {
+    .form__wrap {
+      max-height: 40vh;
+    }
+  }
+}
+@media screen and (min-width: 1920px) {
+  .cabin__form {
+    .form__wrap {
+      max-height: 43vh;
+    }
+  }
+}

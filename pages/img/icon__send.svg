@@ -1,0 +1,31 @@
+<svg id="_50_Real_Estate_Icons-07" data-name="50 Real Estate Icons-07" xmlns="http://www.w3.org/2000/svg" width="46.291" height="46" viewBox="0 0 46.291 46">
+  <g id="ICON" transform="translate(0 0)">
+    <ellipse id="Ellipse_13" data-name="Ellipse 13" cx="23.146" cy="23" rx="23.146" ry="23" fill="#e4c856"/>
+  </g>
+  <g id="Layer_8" transform="translate(10.666 12.831)">
+    <g id="Group_81" data-name="Group 81">
+      <g id="Group_77" data-name="Group 77" transform="translate(5.689)">
+        <path id="Path_721" data-name="Path 721" d="M195.983,161.981l-14.683-.09V142h14.683Z" transform="translate(-181.3 -142)" fill="#1f3049"/>
+        <path id="Path_722" data-name="Path 722" d="M194.563,142v18.715H183.443l-2.143,1.266h14.683V142Z" transform="translate(-181.3 -142)" fill="#57646e"/>
+        <g id="Group_76" data-name="Group 76" transform="translate(0 0.09)">
+          <path id="Path_723" data-name="Path 723" d="M190.278,160.648l-8.978,2.242V143l8.978,2.043Z" transform="translate(-181.3 -143)" fill="#b9bdc2"/>
+          <g id="Group_75" data-name="Group 75" transform="translate(7.025 8.101)">
+            <g id="Group_74" data-name="Group 74">
+              <ellipse id="Ellipse_14" data-name="Ellipse 14" cx="0.814" cy="0.814" rx="0.814" ry="0.814" fill="#57646e"/>
+              <ellipse id="Ellipse_15" data-name="Ellipse 15" cx="0.678" cy="0.678" rx="0.678" ry="0.678" transform="translate(0.362 0.136)" fill="#c9402e"/>
+            </g>
+            <ellipse id="Ellipse_16" data-name="Ellipse 16" cx="0.452" cy="0.452" rx="0.452" ry="0.452" transform="translate(0.814 0.362)" fill="#ca6a46"/>
+          </g>
+        </g>
+      </g>
+      <g id="Group_80" data-name="Group 80" transform="translate(0 7.507)">
+        <g id="Group_78" data-name="Group 78" transform="translate(0 2.619)">
+          <path id="Path_724" data-name="Path 724" d="M118.829,254.94h9.195a6.519,6.519,0,0,1-.118-.94h-9.077A.47.47,0,0,0,118.829,254.94Z" transform="translate(-118.375 -254)" fill="#c9402e"/>
+        </g>
+        <g id="Group_79" data-name="Group 79" transform="translate(6.534)">
+          <path id="Path_725" data-name="Path 725" d="M190.784,225.832l2.622,2.622v-.66l-2.622,2.622c-.425.425.235,1.094.66.66l2.622-2.622a.469.469,0,0,0,0-.66l-2.622-2.622a.467.467,0,0,0-.66.66Z" transform="translate(-190.643 -225.031)" fill="#c9402e"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

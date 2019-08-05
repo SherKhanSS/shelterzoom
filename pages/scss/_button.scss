@@ -1,0 +1,112 @@
+// BUTTON
+
+.set_button {
+  display: flex;
+  align-items: center;
+  margin: 16px 0;
+}
+.set_button--0 div {
+   margin: 0 !important;
+}
+.set_button--center {
+  @extend .set_button;
+  .button {
+    margin: 0 auto;
+  }
+}
+.set_button--right {
+  @extend .set_button;
+  justify-content: flex-end;
+}
+
+.button {
+  @extend .btn;
+  @extend %pointer;
+  @extend %hover__sh--dark;
+  height: 40px;
+  padding: 0 12px;
+  border-radius: 4px;
+  margin: 0 8px;
+  text-align: center;
+  color: $color__text--white;
+}
+.button--accent {
+  @extend .button;
+  background-color: $color__bg__button--accented;
+}
+.button--primary {
+  @extend .button;
+  background-color: $color__bg__button--primary;
+}
+.button--secondary {
+  @extend .button;
+  background-color: $color__bg__button--secondary;
+}
+.button--additional {
+  @extend .button;
+  color: $color__bluegreen;
+  background: $color__yellow;
+}
+.button--extend {
+  @extend .button;
+  color: $color__yellow;
+  background: $color__bluegreen;
+}
+.button--small {
+  @extend .btn--small;
+  padding: 0 20px;
+  height: 34px;
+}
+.button--full {
+  width: 100%;
+  margin: 0 !important;
+}
+.button--text {
+  @extend %pointer;
+  @extend %hover__bg--dark;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 0 0 0 12px;
+  border-radius: 4px;
+  font-weight: 700;
+  color: $color__text--accented;
+}
+.button--img {
+  @extend .btn;
+  @extend %pointer;
+  @extend %hover__bg--dark;
+  display: flex;
+  width: fit-content;
+  height: 40px;
+  align-items: center;
+  margin: 8px 0;
+  border-radius: 20px;
+  color: $color__text--accented;
+  img {
+    width: 40px;
+    height: 40px;
+  }
+  div {
+    padding: 0 16px;
+  }
+}
+.button-1{
+  @extend .button--primary;
+  color: #0B6C75;
+  font-size: 14px;
+  text-transform: none !important;
+  padding: 0 20px;
+  height: 34px;
+  line-height: 34px;
+  background: #F6C254;
+}
+.button-2{
+  @extend .button--secondary;
+  color: #F6C254;
+  font-size: 14px;
+  text-transform: none !important;
+  padding: 0 20px;
+  line-height: 34px;
+  background: #0B6C75;
+}

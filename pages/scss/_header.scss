@@ -1,0 +1,141 @@
+// HEADER
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  color: $color__text--accented;
+  background: $color__bg__card;
+  box-shadow: $sh__bar;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  max-width: 1600px;
+  padding: 8px;
+  margin: 0 auto;
+}
+
+.header__logo {
+  @extend %hover__bg--dark;
+  @extend %pointer;
+  padding: 8px;
+  border-radius: 4px;
+  margin-right: auto;
+}
+.header__logo img {
+  height: 24px;
+}
+
+.header__navigation {
+  display: none;
+  position: fixed;
+  top: 56px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: $color__bg__card;
+}
+
+.header__title {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  padding: 8px;
+  border-bottom: 1px solid rgba(11, 108, 117, .16);
+  background: $color__bg__card;
+}
+
+.header__text {
+  @extend .hl--6;
+  padding: 4px 8px;
+  margin: 0 auto 0 0 !important;
+  opacity: .56;
+}
+
+.header__links {
+  padding: 8px;
+  border-bottom: 1px solid rgba(11, 108, 117, .16);
+}
+.header__links:last-child {
+  border-bottom: none;
+}
+
+.header__link {
+  @extend %hover__text;
+  @extend %pointer;
+  @extend .st--2;
+  position: relative;
+  height: 56px;
+}
+.header__link i {
+  position: absolute;
+  top: 8px;
+}
+.header__link span {
+  margin-left: 48px;
+  line-height: 56px;
+}
+
+@media screen and (min-width: 768px) {
+  .header__wrapper {
+    padding: 8px 16px;
+  }
+  .header__logo img {
+    height: 40px;
+  }
+  .header__action,
+  .header__title {
+    display: none;
+  }
+  .header__navigation {
+    display: block;
+    position: relative;
+    width: auto;
+    top: 0;
+    padding: 8px;
+  }
+  .header__links {
+    float: right;
+    padding: 0;
+    border-bottom: none;
+    margin-left: 16px;
+  }
+  .header__link {
+    float: left;
+    height: 40px;
+    margin-right: 16px;
+  }
+  .header__links:last-child,
+  .header__link:last-child {
+    margin: 0;
+  }
+  .header__link i {
+    position: relative;
+    top: 0;
+    float: left;
+    margin-right: 0;
+  }
+  .header__link span {
+    float: left;
+    margin: 0;
+    line-height: 40px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header__logo img {
+    height: 56px;
+  }
+  .header__links {
+    margin-left: 24px;
+  }
+  .header__link {
+    margin-right: 16px;
+  }
+}
